@@ -12,7 +12,7 @@ import org.json.JSONException;
 import org.springframework.stereotype.Service;
 
 import com.esame.EsameProgOgg.exception.UrlNotFoundException;
-import com.esame.EsameProgOgg.model.Like;
+
 import com.esame.EsameProgOgg.model.Metadati;
 import com.esame.EsameProgOgg.model.Post;
 import com.esame.EsameProgOgg.util.Parsing;

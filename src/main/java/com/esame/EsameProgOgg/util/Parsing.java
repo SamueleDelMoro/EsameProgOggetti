@@ -45,7 +45,7 @@ public class Parsing {
 	 * @throws UrlNotFoundException
 	 */
 	public static ArrayList<Post> run(String url) throws MalformedURLException, JsonMappingException, JsonProcessingException, JarException, UrlNotFoundException, JarException, JSONException, IOException  {
-		ArrayList<Post>postatore=new ArrayList<Post>();	
+		ArrayList<Post>arrpost=new ArrayList<Post>();	
 		
 		
 		String str = null;
@@ -75,7 +75,7 @@ public class Parsing {
 				
 				Post post = mapper.readValue(res1.toString(),Post.class);
 				
-				postatore.add(post);
+				arrpost.add(post);
 				
 				
 			}
@@ -83,8 +83,33 @@ public class Parsing {
 	            throw e;
 	        }
 			
+			for(int k=0; k<arrpost.size(); k++) {
+				
+			String str2 = null;
+			try {
+				str2 = Read.readUrl("https://graph.facebook.com/" +arrpost.get(k).getId() +"?fields=likes.summary(true)&access_token=EAACae8EWj6UBAPCnGksMwLUdD6QnZCPiWMvaHTURou7rwJ2VDc1VpgMCWlFPuO8THGhR9pcQQebvZCrC9ZB9RzwKR8yTiuNDoLipnQoT1qh5hcmbRmdkPZBrfNlufrUvR7ZBXhl0aWRHuDxOVzGE488PZAokc6CfzKmRyzTOthZBi99f6xgY2CD9bjk8MAmVCkZD");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			JSONObject obj2 = new JSONObject(str2);
+			
+
+			//JSONArray l=obj2.getJSONArray("summary");
+				
+				
+				int res2 = obj2.getJSONObject("likes").getJSONObject("summary").getInt("total_count");
+				
+				
+				arrpost.get(k).setLike(/*mapper2.readValue(res2.toString(),Integer.class)*/res2);
+					
+					}
+			
+			
 		}
-		return postatore;
+		return arrpost;
 		
 		
 	}

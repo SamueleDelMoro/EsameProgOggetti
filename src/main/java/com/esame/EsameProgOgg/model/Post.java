@@ -12,8 +12,9 @@ package com.esame.EsameProgOgg.model;
 public class Post {
 	
 	private String created_time;
-		private static String id;
+		private String id;
 		private String message;
+		private int like;
 	
 		/**
 		 * Costruttore
@@ -21,24 +22,32 @@ public class Post {
 		 * @param id indica l'id del post
 		 * @param message indica il messaggio del post
 		 */
-		public Post(String created_time, String id, String message) {
+		public Post(String created_time, String id, String message, int like) {
 			super();
 			this.created_time = created_time;
-			Post.id = id;
+			this.id = id;
 			this.message= message;
+			this.like=like;
 			
 		}
 		/**
 		 * @return the id
 		 */
-		public static String getId() {
+		public String getId() {
 			return id;
+		}
+		
+		public int getLike() {
+			return like;
+		}
+		public void setLike(int like) {
+			this.like = like;
 		}
 		/**
 		 * @param id the id to set
 		 */
 		public void setId(String id) {
-			Post.id = id;
+			this.id = id;
 		}
 		/**
 		 * @return the descrizione
@@ -66,6 +75,6 @@ public class Post {
 		 */
 		@Override
 		public String toString() {
-			return "message: " +this.getMessage()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+Post.getId();
+			return "message: " +this.getMessage()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+this.getId();
 		}
 }
