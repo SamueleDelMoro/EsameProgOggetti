@@ -10,12 +10,15 @@ L’obiettivo del progetto è quello di ottenere mediante le chiamate GET e POST
 # INIZIO DEL PROGRAMMA
 Per poter iniziare ad utilizzare il programma e avere a disposizione tutte le funzionalità di esso, è necessario possedere un account “Facebook Developers” nel quale generare il proprio access token con i relativi permessi, noi abbiamo generato un access token di durata anch’esso con i relativi permessi. Inoltre abbiamo inserito all’interno del test della SpringBootApplication un main nel quale viene passato il sito della nostra pagina con l’access token relativo permette al programma di collegarsi, appunto, con la nostra pagina. Successivamente, una volta mandato in run il programma mediante Spring , è necessario accedere a Postaman ed inserire le relative chiamate GET e POST all’indirizzo http://localhost:8080 . Ora vediamo nello specifico le nostre richieste: 
 # RICHIESTE UTILIZZATE
+
+
 TIPO	ROTTA	DESCRIZIONE
 GET	/metadata	Richiesta dei metadati dei post
 GET	/posts	Richiesta di tutti i post, con il relativo numero di like
 GET	/stat	Richiesta di tutte le statistiche riguardo i post
 POST	/filter	Esecuzione di un filtro su un post
 POST	/stat	Esecuzione di una statistica su un post filtrato
+
 
 Una volta definite tutte le chiamate andiamo a definire tutte le possibile statistiche e i possibili filtri i quali vanno a implementare le chiamate GET e POST.
 
