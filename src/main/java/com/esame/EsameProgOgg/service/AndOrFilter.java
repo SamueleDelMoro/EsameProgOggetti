@@ -41,15 +41,18 @@ public class AndOrFilter {
 			}
 			postFiltered1=filter.get(0).doFilter();
 			filter.remove(0);
+			
 			if(type.equals("or")||type.equals("and")) {
 				for(Filter f : filter) {
 					Set<Post> set = new LinkedHashSet<>(postFiltered1);
 					postFiltered2=f.doFilter();
-					if(type.equals("or")) {
-						set.addAll(postFiltered2);
-					}
+					
 					if(type.equals("and")) {
 						set.retainAll(postFiltered2);
+						if(type.equals("or")) {
+						set.addAll(postFiltered2);
+					}
+					
 					}
 					postFiltered2=new ArrayList<>(set);
 					postFiltered1=postFiltered2;

@@ -15,6 +15,8 @@ public class Post {
 		private String id;
 		private String message;
 		private int like;
+		private String media_type;
+	
 	
 		/**
 		 * Costruttore
@@ -22,14 +24,28 @@ public class Post {
 		 * @param id indica l'id del post
 		 * @param message indica il messaggio del post
 		 */
-		public Post(String created_time, String id, String message, int like) {
+		public Post(String created_time, String id, String message, int like, String media_type) {
 			super();
 			this.created_time = created_time;
 			this.id = id;
 			this.message= message;
 			this.like=like;
+			this.media_type=media_type;
+			
 			
 		}
+		
+
+		public String getMedia_type() {
+			return media_type;
+		}
+
+
+		public void setMedia_type(String media_type) {
+			this.media_type = media_type;
+		}
+
+
 		/**
 		 * @return the id
 		 */
@@ -75,6 +91,6 @@ public class Post {
 		 */
 		@Override
 		public String toString() {
-			return "message: " +this.getMessage()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+this.getId();
+			return "message: " +this.getMessage()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+this.getId()+"\n"+"like:"+this.getLike()+"\n"+"media_type:"+this.getMedia_type();
 		}
 }

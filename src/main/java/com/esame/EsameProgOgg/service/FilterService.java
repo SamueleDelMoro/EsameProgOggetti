@@ -35,6 +35,7 @@ public class FilterService {
 			Class <?> c = Class.forName(dir+command.substring(0, 1).toUpperCase()+command.substring(1));
 			
 			Constructor<?> con = c.getDeclaredConstructor(ArrayList.class, ArrayList.class);
+			
 			newFilter= (Filter) con.newInstance(post,param);
 		} catch (NoSuchMethodException e) {
 			// TODO Auto-generated catch block

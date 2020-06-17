@@ -4,9 +4,9 @@ package com.esame.EsameProgOgg.service;
 import java.io.IOException;
 
 
-import java.net.MalformedURLException;
+
 import java.util.ArrayList;
-import java.util.jar.JarException;
+
 
 import org.json.JSONException;
 import org.springframework.stereotype.Service;
@@ -17,8 +17,7 @@ import com.esame.EsameProgOgg.model.Metadati;
 import com.esame.EsameProgOgg.model.Post;
 import com.esame.EsameProgOgg.util.Parsing;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
+
 
 
 /**
@@ -54,6 +53,8 @@ public class FacebookService {
 		metadati.add(new Metadati("created_time","Time publishing post","String"));
 		metadati.add(new Metadati("id", "Id del post", "String"));
 		metadati.add(new Metadati("message", "Descrizione del post", "String " ));
+		metadati.add(new Metadati("media_type", "tipo di media" , "String"));
+		metadati.add(new Metadati("total_count", "numero like", "int"));
 		
 	}
 	
@@ -72,10 +73,6 @@ public class FacebookService {
 	public static ArrayList<Post> getPosts() {
 		return posts;
 	}
-	
-	
-	
-		
 	
 }
 	
