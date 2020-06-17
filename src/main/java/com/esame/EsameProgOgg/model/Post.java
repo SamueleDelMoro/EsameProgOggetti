@@ -16,6 +16,7 @@ public class Post {
 		private String message;
 		private int like;
 		private String media_type;
+		private int count;
 	
 	
 		/**
@@ -24,17 +25,32 @@ public class Post {
 		 * @param id indica l'id del post
 		 * @param message indica il messaggio del post
 		 */
-		public Post(String created_time, String id, String message, int like, String media_type) {
+		public Post(String created_time, String id, String message, int like, String media_type, int count) {
 			super();
 			this.created_time = created_time;
 			this.id = id;
 			this.message= message;
+			this.count=count;
 			this.like=like;
 			this.media_type=media_type;
 			
 			
+			
 		}
 		
+		
+
+		public int getCount() {
+			return count;
+		}
+
+
+
+		public void setCount(int count) {
+			this.count = count;
+		}
+
+
 
 		public String getMedia_type() {
 			return media_type;
@@ -91,6 +107,6 @@ public class Post {
 		 */
 		@Override
 		public String toString() {
-			return "message: " +this.getMessage()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+this.getId()+"\n"+"like:"+this.getLike()+"\n"+"media_type:"+this.getMedia_type();
+			return "message: " +this.getMessage()+"\n"+"count:"+this.getCount()+"\nCreated time: "+this.getCreated_time()+"\n"+"id:"+this.getId()+"\n"+"like:"+this.getLike()+"\n"+"media_type:"+this.getMedia_type();
 		}
 }

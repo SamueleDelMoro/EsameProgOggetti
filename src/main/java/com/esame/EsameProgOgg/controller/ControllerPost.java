@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import java.io.IOException;
-
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -54,7 +54,7 @@ public class ControllerPost {
 	 */
 	
 
-	@RequestMapping(value = "/metadata", method = RequestMethod.GET)
+	@RequestMapping(value = "metadata", method = RequestMethod.GET)
 	public  ArrayList<Metadati> metadati(){
 		return FacebookService.getMetadati();
 	}
@@ -64,7 +64,7 @@ public class ControllerPost {
 	 * @return elenco dei post con i relativi attributi
 	 * @throws IOException
 	 */
-	@RequestMapping(value = "/posts", method = RequestMethod.GET)
+	@RequestMapping(value = "posts", method = RequestMethod.GET)
 	public static ArrayList<Post> post() throws IOException {
 		return FacebookService.getPosts();
 	}
@@ -88,10 +88,11 @@ public class ControllerPost {
 	 * @return elenco dei post filtrati
 	 * @throws commandStatException
 	 * @throws BetweenException
+	 * @throws ParseException 
 	 */
 	
 	@RequestMapping(value="filter", method=RequestMethod.POST)
-	public ArrayList<Post> filter(@RequestParam(value="type")String type,@RequestBody HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException{	
+	public ArrayList<Post> filter(@RequestParam(value="type")String type,@RequestBody HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException, ParseException{	
 		return AndOrFilter.andOrFiltering(type, FacebookService.posts, map);
 	}
 	
@@ -103,9 +104,10 @@ public class ControllerPost {
 	 * @return statistica su elenco di post filtrati
 	 * @throws commandStatException
 	 * @throws BetweenException
+	 * @throws ParseException 
 	 */
 	@RequestMapping(value="stat",method=RequestMethod.POST)
-	public Statistics statFiltered(@RequestParam(value="type") String type,@RequestParam(value="spec") String stat, @RequestBody HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException {
+	public Statistics statFiltered(@RequestParam(value="type") String type,@RequestParam(value="spec") String stat, @RequestBody HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException, ParseException {
 		ArrayList<Post> postFiltered=AndOrFilter.andOrFiltering(type, FacebookService.posts, map);
 		StatisticsCalculate newStat= StatisticsService.statFormulation(stat, postFiltered);
 		return newStat.doStat();

@@ -1,5 +1,6 @@
 package com.esame.EsameProgOgg.filter;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 
 
@@ -19,6 +20,7 @@ public interface Filter {
  * metodo di filtraggio
  * @return un arrayList di post filtrati
  * @throws BetweenException
+ * @throws ParseException 
  */
-	public  ArrayList<Post> doFilter() throws BetweenException;
+	public  ArrayList<Post> doFilter() throws BetweenException, ParseException;
 }

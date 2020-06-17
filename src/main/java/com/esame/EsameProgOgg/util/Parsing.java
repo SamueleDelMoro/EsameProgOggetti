@@ -77,7 +77,11 @@ public class Parsing {
 			catch (JsonProcessingException e) {
 	            throw e;
 	        }
-			
+			for(int h=0; h<arrpost.size(); h++) {
+				
+					arrpost.get(h).setCount(arrpost.get(h).getMessage().length());
+				
+			}
 			for(int k=0; k<arrpost.size(); k++) {
 				String str2 = null;
 			try {
@@ -113,6 +117,7 @@ public class Parsing {
 				
 				
 			}
+			
 				
 			
 			
@@ -120,10 +125,11 @@ public class Parsing {
 		}
 		return arrpost;
 		
+	
 		
 	}
 	
-	
-	
-	
 }
+		
+	
+

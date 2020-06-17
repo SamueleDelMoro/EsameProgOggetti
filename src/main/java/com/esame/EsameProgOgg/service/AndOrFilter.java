@@ -1,5 +1,6 @@
 package com.esame.EsameProgOgg.service;
 
+import java.text.ParseException;
 /**
  * <p>
  * <b> Classe </b>  la quale calcola il filtraggio post
@@ -31,8 +32,9 @@ public class AndOrFilter {
 	 * @return elenco dei post filtrati
 	 * @throws commandStatException
 	 * @throws BetweenException
+	 * @throws ParseException 
 	 */
-	public static ArrayList<Post> andOrFiltering(String type,ArrayList<Post> post, HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException{
+	public static ArrayList<Post> andOrFiltering(String type,ArrayList<Post> post, HashMap<String,ArrayList<String>> map) throws CommandException, BetweenException, ParseException{
 		ArrayList<Post> postFiltered2= new ArrayList<Post>();
 		ArrayList<Post> postFiltered1= new ArrayList<Post>();
 			ArrayList<Filter> filter= new ArrayList<Filter>();

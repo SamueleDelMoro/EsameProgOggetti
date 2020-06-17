@@ -34,7 +34,7 @@ public class StatisticsPresMult implements StatisticsCalculate{
 		int n=0;
 		StatisticsPres stat=new StatisticsPres();
 		for(Post post : post) {
-			if(post.getMessage()==null) 
+			if(post.getMedia_type()!=null) 
 			n++;
 		 }
 		if(n!=0)

@@ -1,7 +1,7 @@
 package com.esame.EsameProgOgg.stat;
 
-
 import com.esame.EsameProgOgg.model.Statistics;
+
 /**
  * <p>
  * <b> Interfaccia </b> per il calcolo della statistica
@@ -13,5 +13,7 @@ import com.esame.EsameProgOgg.model.Statistics;
  */
 public interface StatisticsCalculate {
 	
+	
 	public Statistics doStat();
+	
 }

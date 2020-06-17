@@ -19,7 +19,7 @@ import com.esame.EsameProgOgg.stat.StatisticsCalculate;
  *  */
 public class StatisticsService {
 	
-	private static String dir="com.esame.EsameProgOgg.stat.Stat";
+	private static String dir="com.esame.EsameProgOgg.stat.Statistics";
 	/**
 	 * Metodo il quale calcola la classe statistica 
 	 * @param command, specifica per la statistica utile alla creazione della classe

@@ -28,6 +28,7 @@ public class StatisticsNum extends Statistics {
 	 * @param n , numero dei post
 	 */
 	public StatisticsNum(String specifica,int avg, int min, int max, int n) {
+		
 		super(specifica);
 		this.avg=Integer.toString(avg);
 		this.max=Integer.toString(max);
