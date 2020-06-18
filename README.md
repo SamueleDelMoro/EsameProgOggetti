@@ -6,7 +6,7 @@
 *	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
 *	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
 
-![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Use%20Case%20Diagram.jpg)
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Use%20Case%20Diagramggiusto.jpg)
 
 
 
