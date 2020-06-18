@@ -6,7 +6,7 @@
 	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
 	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Use%20Case%20Diagram.jpg)
 
 
 
@@ -30,12 +30,16 @@ Per poter iniziare ad utilizzare il programma e avere a disposizione tutte le fu
 Una volta definite tutte le chiamate andiamo a definire tutte le possibile statistiche e i possibili filtri i quali vanno a implementare le chiamate GET e POST.
 
 # STATISTICHE
-NOME	OPERATORE	DESCRIZIONE
-Avg	/stat?spec=Avg	Valore medio del numero dei caratteri del messaggio
-Min	/stat?spec=Min	Valore minimo del numero di caratteri per post
-Max	/stat?spec=Max	Valore massimo del numero di caratteri per post
-NumPost	/stat?spec=NumPost	Numero dei post
-PresMult	/stat? =PresMult	Numero post con presenza multimediale
+| NOME |	OPERATORE	| DESCRIZIONE |
+| --- | --- | --- |
+| Avg	| /stat?spec=Avg	| Valore medio del numero dei caratteri del messaggio |
+| Min	| /stat?spec=Min |	Valore minimo del numero di caratteri per post |
+| Max	| /stat?spec=Max	| Valore massimo del numero di caratteri per post |
+| LikeAvg | /stat?spec=LikeAvg | Valore medio del numero dei like |
+| LikeMax | /stat?spec=LikeMax | Post con piu alto numero di like |
+| LikeMin | /stat?spec=LikeMin | Post con piu piccolo numero di like |
+| NumPost	| /stat?spec=NumPost	| Numero dei post |
+| PresMult	| /stat?=PresMult	| Numero post con presenza multimediale |
 
 # FILTRI
 Per usare i filtri che abbiamo messo a disposizione, bisogna fare questa distinzione:
@@ -49,6 +53,32 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | Gt	| {“Gt”:[“x”]}	| Post con numero caratteri maggiori di x |
 | Lt	| {“Lt”:[“x”]}	| Post con numero caratteri minori di x |
 | Bt	| {“Bt”:[“x”, “y”]} |	Post con numero caratteri compresi tra x e y |
+| In | {"In":["contenuto cercato"]} | Post aventi il contenuto cercato nel messaggio |
+| LikeBt | {"LikeBt":["x","y"]} | Post 
+| LikeGt | {"LikeGt":["x"]} | Post 
+| LikeLt | {"LikeLt":["x"]} | Post 
+| LikeIn | {"LikeIn":["x","y"]} | Post 
 | InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
-| InMultimedia	| {“InMultimedia”:[“”]}	| Post aventi contenuto multimediale |
+| TimeAfter | {“TimeAfter”:[“data”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
+| TimeBefore	| {“TimeBefore”:[“data”]}	| | Post pubblicati prima rispetto a una data scelta dall'utente |
+| TimeEqual	| {“TimeEqual”:[“data”]}	| Post pubblicati in una data scelta dall'utente |
+
+# DIAGRAMMA DELLE CLASSI
+## PACKAGE
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame.jpg)
+
+## APPLICATION
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Application.jpg)
+
+## STAT
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
+
+
+![alt text](http://url/to/img.png)
+
+
+
+
 
