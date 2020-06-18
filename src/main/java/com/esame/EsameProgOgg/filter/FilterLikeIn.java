@@ -3,7 +3,15 @@ package com.esame.EsameProgOgg.filter;
 import java.util.ArrayList;
 
 import com.esame.EsameProgOgg.model.Post;
-
+/**
+ * <p>
+ * <b> Classe </b> di filtro per Like di un arrayList di post per un determinato valore scelto dall'utente
+ * </p>
+ * @author Samuele Del Moro
+ * @author Lorenzo Silvestri
+ * @author Antonio Antonini
+ *
+ */
 public class FilterLikeIn extends FilterIn implements Filter{
 	/**
 	 * costruttore

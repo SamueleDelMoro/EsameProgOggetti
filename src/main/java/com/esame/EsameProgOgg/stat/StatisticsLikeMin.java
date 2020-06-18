@@ -4,7 +4,15 @@ import java.util.ArrayList;
 
 import com.esame.EsameProgOgg.model.Post;
 import com.esame.EsameProgOgg.model.StatisticsNum;
-
+/**
+ * <p>
+ * <b> Classe </b> utile per il calcolo del post con minor numero di like
+ * </p>
+ * @author Samuele Del Moro
+ * @author Lorenzo Silvestri
+ * @author Antonio Antonini
+ *
+ */
 public class StatisticsLikeMin implements StatisticsCalculate {
 private ArrayList<Post> post=new ArrayList<Post>();
 	

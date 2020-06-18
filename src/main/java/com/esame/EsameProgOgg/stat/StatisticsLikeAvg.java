@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import com.esame.EsameProgOgg.model.Post;
 import com.esame.EsameProgOgg.model.StatisticsNum;
 
+/**
+ * <p>
+ * <b> Classe </b> la quale calcola la lunghezza media dei like
+ * </p>
+ * @author Samuele Del Moro
+ * @author Lorenzo Silvestri
+ * @author Antonio Antonini
+ */
 public class StatisticsLikeAvg implements StatisticsCalculate {
 private ArrayList<Post> post=new ArrayList<Post>();
 	

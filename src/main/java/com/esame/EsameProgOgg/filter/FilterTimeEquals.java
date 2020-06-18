@@ -1,17 +1,31 @@
 package com.esame.EsameProgOgg.filter;
 
 import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
 import com.esame.EsameProgOgg.model.Post;
 
+/**
+ * <p>
+ * <b> Classe </b> di filtro per un arrayList di post per una determinata data scelta dall'utente
+ * </p>
+ * @author Samuele Del Moro
+ * @author Lorenzo Silvestri
+ * @author Antonio Antonini
+ *
+ */
 public class FilterTimeEquals {
 	private ArrayList<Post> post= new ArrayList<Post>();
 	private ArrayList<String> param= new ArrayList<String>();
 	
-
+	/**
+	 * costruttore
+	 * @param post arrayList di post
+	 * @param param arrayList di stringhe contenenti i parametri di filtraggio
+	 */
 
 	public FilterTimeEquals(ArrayList<Post> post, ArrayList<String> param) {
 		this.post=post;
@@ -25,8 +39,6 @@ public class FilterTimeEquals {
 	 * metodo che consente il filtraggio
 	 * @throws java.text.ParseException 
 	 */
-	
-	
 	public ArrayList<Post> doFilter() throws ParseException{
 		ArrayList<Post> postFiltered =new ArrayList<Post>();
 		SimpleDateFormat formatter1=new SimpleDateFormat("yyyy-MM-dd");

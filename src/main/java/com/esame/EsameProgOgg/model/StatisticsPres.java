@@ -26,28 +26,28 @@ public class StatisticsPres extends Statistics{
 	}
 
 	/**
-	 * @return the pres
+	 * @return pres
 	 */
 	public boolean isPres() {
 		return pres;
 	}
 
 	/**
-	 * @param pres the pres to set
+	 * @param pres il pres da impostare
 	 */
 	public void setPres(boolean pres) {
 		this.pres = pres;
 	}
 
 	/**
-	 * @return the numPost
+	 * @return il numpost
 	 */
 	public int getNumPost() {
 		return numPost;
 	}
 
 	/**
-	 * @param numPost the numPost to set
+	 * @param numPost il numero di post da impostare
 	 */
 	public void setNumPost(int numPost) {
 		this.numPost = numPost;

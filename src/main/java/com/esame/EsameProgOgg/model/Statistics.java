@@ -5,7 +5,7 @@ package com.esame.EsameProgOgg.model;
 
 /**
  * classe statistica generica, contiene solo la specifica
- * @param spec, specifica
+ * @param specifica
  */
 public class Statistics {
 	

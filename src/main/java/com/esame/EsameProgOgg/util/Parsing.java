@@ -77,11 +77,15 @@ public class Parsing {
 			catch (JsonProcessingException e) {
 	            throw e;
 	        }
+			
+			
 			for(int h=0; h<arrpost.size(); h++) {
 				
 					arrpost.get(h).setCount(arrpost.get(h).getMessage().length());
 				
 			}
+			
+			
 			for(int k=0; k<arrpost.size(); k++) {
 				String str2 = null;
 			try {
@@ -96,6 +100,7 @@ public class Parsing {
 				int res2 = obj2.getJSONObject("likes").getJSONObject("summary").getInt("total_count");
 				arrpost.get(k).setLike(res2);
 					}
+			
 			
 			for(int j=0; j<arrpost.size(); j++) {
 				
@@ -112,22 +117,11 @@ public class Parsing {
 								String res3 = obj3.getJSONObject("attachments").getJSONArray("data").getJSONObject(0).getString("media_type");
              arrpost.get(j).setMedia_type(res3);
 			
-				
-				
-				
-				
 			}
 			
-				
-			
-			
-			
-		}
+			}
 		return arrpost;
-		
-	
-		
-	}
+		}
 	
 }
 		

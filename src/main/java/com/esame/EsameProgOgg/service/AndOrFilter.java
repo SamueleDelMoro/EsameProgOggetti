@@ -25,10 +25,10 @@ import com.esame.EsameProgOgg.model.Post;
 public class AndOrFilter {
 	/**
 	 * Dato il tipo di filtraggio (and,or, default), l'elenco di post da filtrare ed i parametri di 
-	 * filtraggio (in,Nin,Gt,...) calcolo elenco di post che rispettano tali specifiche
+	 * filtraggio (in,Gt,...) calcolo elenco di post che rispettano tali specifiche
 	 * @param type , specifica di filtraggio avanzata nel caso di molteplici richieste (and,or,default)
 	 * @param post , elenco di post da filtrare
-	 * @param map , hashmap avente key=tipo di filtraggio(in,gt,nin,lt,bt,...) e value=parametri di filtraggio
+	 * @param map , hashmap avente key=tipo di filtraggio(in,gt,lt,bt,...) e value=parametri di filtraggio
 	 * @return elenco dei post filtrati
 	 * @throws commandStatException
 	 * @throws BetweenException

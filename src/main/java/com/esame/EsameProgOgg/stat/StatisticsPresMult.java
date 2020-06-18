@@ -8,7 +8,7 @@ import com.esame.EsameProgOgg.model.StatisticsPres;
 
 /**
  * <p>
- * <b> Classe </b> la quale calcola il numero totale dei post
+ * <b> Classe </b> la quale calcola il numero totale dei post con multimedia
  * </p>
  * @author Samuele Del Moro
  * @author Lorenzo Silvestri

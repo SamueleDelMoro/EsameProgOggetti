@@ -14,7 +14,7 @@ public class StatisticsNum extends Statistics {
 	private String max;
 	private String numTotalePost;
 	/**
-	 * costruttore di default preso dalla superclasse stat
+	 * costruttore di default preso dalla superclasse Statistics
 	 */
 	public StatisticsNum() {
 		super();
@@ -36,13 +36,16 @@ public class StatisticsNum extends Statistics {
 		this.numTotalePost=Integer.toString(n);
 	}
 /**
- * getters/setters
+ * @return numero totale post
  * 
  */
 	public String getNumTotalePost() {
 		return numTotalePost;
 	}
-
+	/**
+	 * @param numTotalePost il numero totale di post da impostare
+	 * 
+	 */
 	public void setNumTotalePost(int numTotalePost) {
 		this.numTotalePost = Integer.toString(numTotalePost);
 		this.max=null;
@@ -50,10 +53,17 @@ public class StatisticsNum extends Statistics {
 		this.avg=null;
 		
 	}
-
+	/**
+	 * @return media
+	 * 
+	 */
 	public String getAvg() {
 		return avg;
 	}
+	/**
+	 * @param avg la media da impostare
+	 * 
+	 */
 
 	public void setAvg(int avg) {
 		this.avg = Integer.toString(avg);
@@ -61,21 +71,34 @@ public class StatisticsNum extends Statistics {
 		this.min=null;
 		this.numTotalePost=null;
 	}
-
+	/**
+	 * @return minimo
+	 * 
+	 */
 	public String getMin() {
 		return min;
 	}
-
+	/**
+	 * @param min il minimo da impostare
+	 * 
+	 */
 	public void setMin(int min) {
 		this.min = Integer.toString(min);
 		this.max=null;
 		this.avg=null;
 		this.numTotalePost=null;
 	}
-
+	/**
+	 * @return massimo
+	 * 
+	 */
 	public String getMax() {
 		return max;
 	}
+	/**
+	 * @param max il massimo da impostare
+	 * 
+	 */
 	public void setMax(int max) {
 		this.max = Integer.toString(max);
 		this.avg=null;

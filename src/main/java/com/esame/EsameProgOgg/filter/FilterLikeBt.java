@@ -2,9 +2,18 @@ package com.esame.EsameProgOgg.filter;
 
 import java.util.ArrayList;
 
+
 import com.esame.EsameProgOgg.exception.BetweenException;
 import com.esame.EsameProgOgg.model.Post;
-
+/**
+ * <p>
+ * <b> Classe </b> di filtro per i like di un arrayList di post  tra due valori interi scelti dall'utente
+ * </p>
+ * @author Samuele Del Moro
+ * @author Lorenzo Silvestri
+ * @author Antonio Antonini
+ *
+ */
 public class FilterLikeBt implements Filter {
 	private ArrayList<Post> post= new ArrayList<Post>();
 	private ArrayList<String> param= new ArrayList<String>();
@@ -20,8 +29,7 @@ public class FilterLikeBt implements Filter {
 	/**
 	 * Metodo che consente il filtraggio
 	 */
-
-	public  ArrayList<Post> doFilter() throws BetweenException  {
+public  ArrayList<Post> doFilter() throws BetweenException  {
 		if(Integer.parseInt(param.get(0))>=Integer.parseInt(param.get(1)))  {
 			throw new BetweenException();
 

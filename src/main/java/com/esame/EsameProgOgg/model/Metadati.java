@@ -17,7 +17,7 @@ public class Metadati {
 	
 	/**
 	 * Costruttore
-	 * @param alias indica l'ttributo della classe Post
+	 * @param alias indica l'attributo della classe Post
 	 * @param sourceField indica il campo dell'attributo della classe Post
 	 * @param type il tipo dell'attributo della classe Post
 	 */
@@ -29,7 +29,7 @@ public class Metadati {
 	
 	
 	/**
-	 * @return the alias
+	 * @return l'alias
 	 */
 	public String getAlias() {
 		return alias;
@@ -37,7 +37,7 @@ public class Metadati {
 
 
 	/**
-	 * @param alias the alias to set
+	 * @param alias l'alias da impostare
 	 */
 	public void setAlias(String alias) {
 		this.alias = alias;
@@ -45,7 +45,7 @@ public class Metadati {
 
 
 	/**
-	 * @return the sourceField
+	 * @return il sourceField
 	 */
 	public String getSourceField() {
 		return sourceField;
@@ -53,7 +53,7 @@ public class Metadati {
 
 
 	/**
-	 * @param sourceField the sourceField to set
+	 * @param sourceField il sourceField da impostare
 	 */
 	public void setSourceField(String sourceField) {
 		this.sourceField = sourceField;
@@ -61,7 +61,7 @@ public class Metadati {
 
 
 	/**
-	 * @return the type
+	 * @return type
 	 */
 	public String getType() {
 		return type;
@@ -69,7 +69,7 @@ public class Metadati {
 
 
 	/**
-	 * @param type the type to set
+	 * @param type il type da inserire
 	 */
 	public void setType(String type) {
 		this.type = type;

@@ -55,7 +55,7 @@ public class FacebookService {
 		metadati.add(new Metadati("message", "Descrizione del post", "String " ));
 		metadati.add(new Metadati("media_type", "tipo di media" , "String"));
 		metadati.add(new Metadati("total_count", "numero like", "int"));
-		
+		metadati.add(new Metadati("count", "lunghezza del messaggio", "int"));
 	}
 	
 	/**
