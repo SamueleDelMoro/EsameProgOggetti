@@ -12,12 +12,13 @@ Per poter iniziare ad utilizzare il programma e avere a disposizione tutte le fu
 # RICHIESTE UTILIZZATE
 
 
-TIPO	ROTTA	DESCRIZIONE
-GET	/metadata	Richiesta dei metadati dei post
-GET	/posts	Richiesta di tutti i post, con il relativo numero di like
-GET	/stat	Richiesta di tutte le statistiche riguardo i post
-POST	/filter	Esecuzione di un filtro su un post
-POST	/stat	Esecuzione di una statistica su un post filtrato
+| TIPO | 	| ROTTA |	| DESCRIZIONE |
+| --- | | --- | | --- |
+| GET	| | /metadata	| | Richiesta dei metadati dei post |
+| GET |	| /posts	| | Richiesta di tutti i post, con il relativo numero di like |
+| GET	| | /stat	| | Richiesta di tutte le statistiche riguardo i post |
+| POST	| | /filter | 	| Esecuzione di un filtro su un post |
+| POST |	| /stat |	| Esecuzione di una statistica su un post filtrato |
 
 
 Una volta definite tutte le chiamate andiamo a definire tutte le possibile statistiche e i possibili filtri i quali vanno a implementare le chiamate GET e POST.
@@ -32,9 +33,9 @@ PresMult	/stat? =PresMult	Numero post con presenza multimediale
 
 # FILTRI
 Per usare i filtri che abbiamo messo a disposizione, bisogna fare questa distinzione:
-	/filter?type=and per fare la and di due filtri diversi
-	/filter?type=or per fare la or di due filtri diversi
-	/filter?type=… con qualsiasi stringa o carattere diversa dalle precedenti per utilizzare un singolo filtro, purchè non sia nullo Tali stringhe saranno aggiunte a localhost:8080. Inoltre sarà possibile con l’operatore “&” eseguire una determinata statistica dopo un filtraggio(vedi par. STATISTICHE)
+1./filter?type=and per fare la and di due filtri diversi
+2./filter?type=or per fare la or di due filtri diversi
+3./filter?type=… con qualsiasi stringa o carattere diversa dalle precedenti per utilizzare un singolo filtro, purchè non sia nullo Tali stringhe saranno aggiunte a localhost:8080. Inoltre sarà possibile con l’operatore “&” eseguire una determinata statistica dopo un filtraggio(vedi par. STATISTICHE)
 Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 # OPERATORI FILTRI
 NOME 	BODY	DESCRIZIONE
