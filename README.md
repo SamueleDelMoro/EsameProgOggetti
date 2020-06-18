@@ -54,9 +54,9 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | Lt	| {“Lt”:[“x”]}	| Post con numero caratteri minori di x |
 | Bt	| {“Bt”:[“x”, “y”]} |	Post con numero caratteri compresi tra x e y |
 | In | {"In":["contenuto cercato"]} | Post aventi il contenuto cercato nel messaggio |
-| LikeBt | {"LikeBt":["x","y"]} | Post 
-| LikeGt | {"LikeGt":["x"]} | Post 
-| LikeLt | {"LikeLt":["x"]} | Post 
+| LikeBt | {"LikeBt":["x","y"]} | Post con numero di like compresi tra x e y
+| LikeGt | {"LikeGt":["x"]} | Post con numero di like maggiori di x
+| LikeLt | {"LikeLt":["x"]} | Post con numero di like minori di x
 | LikeIn | {"LikeIn":["x"]} | Post avente quel preciso valore di like (x)
 | InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
 | TimeAfter | {“TimeAfter”:[“yyyy-mm-dd”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
@@ -82,7 +82,7 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Model.jpg)
 
 ## STAT
-(https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
 
 
 ![alt text](http://url/to/img.png)
