@@ -12,7 +12,7 @@
 
 
 # OBIETTIVO DEL PROGETTO
-L’obiettivo del progetto è quello di ottenere mediante le chiamate GET e POST, le quali verranno definite successivamente, tutto l’elenco dei post con i relativi like con il numero complessivo di essi sotto ogni post, ed oltre questo anche la creazione di statistiche e filtri, anch’essi descritti in seguito, i quali riguardano i post e le relative caratteristiche.
+L’obiettivo del progetto è quello di ottenere mediante le chiamate GET e POST, le quali verranno definite successivamente, tutto l’elenco dei post con i relativi like con il numero complessivo di essi sotto ogni post, ed oltre questo anche la creazione di statistiche e filtri, anch’essi descritti in seguito, i quali riguardano i post e le relative caratteristiche.Infine abbiamo realizzato dei test riguardante le eccezioni e riguardante la presenza di valori nulli, i quali anch'essi facevano parte dell'obiettivo principale.
 # INIZIO DEL PROGRAMMA
 Per poter iniziare ad utilizzare il programma e avere a disposizione tutte le funzionalità di esso, è necessario possedere un account “Facebook Developers” nel quale generare il proprio access token con i relativi permessi, noi abbiamo generato un access token di durata anch’esso con i relativi permessi. Inoltre abbiamo inserito all’interno del test della SpringBootApplication un main nel quale viene passato il sito della nostra pagina con l’access token relativo permette al programma di collegarsi, appunto, con la nostra pagina. Successivamente, una volta mandato in run il programma mediante Spring , è necessario accedere a Postaman ed inserire le relative chiamate GET e POST all’indirizzo http://localhost:8080 . Ora vediamo nello specifico le nostre richieste: 
 # RICHIESTE UTILIZZATE
@@ -104,9 +104,30 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Util.jpg)
 
+# DIAGRAMMA DELLE SEQUENZE
 
-#SUDDIVISIONE PROGETTO
+## GET/metadata
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Diagramma%20delle%20metadati.jpg)
+
+## GET/posts
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Diagramma%20delle%20sequenze1.jpg)
+
+## POST/filter?type=
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Diagramma%20delle%20filter.jpg)
+
+## GET/stat?specifica
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Diagramma%20delle%20stat.jpg)
+
+## POST/statFiltered?type=_&spec=
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Diagramma%20delle%20stat%26filter.jpg)
+
+
+
+
+# SUDDIVISIONE PROGETTO
 * Samuele Del Moro Creazione JavaDoc e parte relativa all'util e parte relativa e filtri e stat
 * Lorenzo Silvestri Creazione ReadMe e parte relativa al controller e service 
-* Antonio Antonini Diagrammi UML e prima stesura del progetto e parte relativa al model  
+* Antonio Antonini Diagrammi UML e prima stesura del progetto e parte relativa al model e parte relativa ai test 
 Essendo dello stesso paese, ci siamo riusciti sempre ad incontrare per lavorare al meglio, quindi avendo lavorato sempre insieme abbiamo realizzato il progetto sempre in collaborazione per qualsiasi parte di esso; la suddivisione è una suddivisione relativa in quanto, appunto, abbiamo lavorato sempre in gruppo.
