@@ -5,6 +5,12 @@
 	Ottenere delle statistiche sui contenuti dei post in formato JSON (GET)
 	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
 	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
+
+![alt text](http://url/to/img.png)
+
+
+
+
 # OBIETTIVO DEL PROGETTO
 L’obiettivo del progetto è quello di ottenere mediante le chiamate GET e POST, le quali verranno definite successivamente, tutto l’elenco dei post con i relativi like con il numero complessivo di essi sotto ogni post, ed oltre questo anche la creazione di statistiche e filtri, anch’essi descritti in seguito, i quali riguardano i post e le relative caratteristiche.
 # INIZIO DEL PROGRAMMA
@@ -33,9 +39,9 @@ PresMult	/stat? =PresMult	Numero post con presenza multimediale
 
 # FILTRI
 Per usare i filtri che abbiamo messo a disposizione, bisogna fare questa distinzione:
-1./filter?type=and per fare la and di due filtri diversi
-2./filter?type=or per fare la or di due filtri diversi
-3./filter?type=… con qualsiasi stringa o carattere diversa dalle precedenti per utilizzare un singolo filtro, purchè non sia nullo Tali stringhe saranno aggiunte a localhost:8080. Inoltre sarà possibile con l’operatore “&” eseguire una determinata statistica dopo un filtraggio(vedi par. STATISTICHE)
+1. /filter?type=and per fare la and di due filtri diversi
+2. /filter?type=or per fare la or di due filtri diversi
+3. /filter?type=… con qualsiasi stringa o carattere diversa dalle precedenti per utilizzare un singolo filtro, purchè non sia nullo Tali stringhe saranno aggiunte a localhost:8080. Inoltre sarà possibile con l’operatore “&” eseguire una determinata statistica dopo un filtraggio(vedi par. STATISTICHE)
 Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 # OPERATORI FILTRI
 | NOME |	BODY	| DESCRIZIONE |
