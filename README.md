@@ -6,7 +6,7 @@
 	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
 	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
 
-![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Application.jpg)
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Use%20Case%20Diagram.jpg)
 
 
 
@@ -59,6 +59,26 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | LikeLt | {"LikeLt":["x"]} | Post 
 | LikeIn | {"LikeIn":["x","y"]} | Post 
 | InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
+| TimeAfter | {“TimeAfter”:[“data”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
+| TimeBefore	| {“TimeBefore”:[“data”]}	| | Post pubblicati prima rispetto a una data scelta dall'utente |
+| TimeEqual	| {“TimeEqual”:[“data”]}	| Post pubblicati in una data scelta dall'utente |
+
+#DIAGRAMMA DELLE CLASSI
+##PACKAGE
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame.jpg)
+
+##APPLICATION
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Application.jpg)
+
+##STAT
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
+
+
+![alt text](http://url/to/img.png)
+
+
 
 
 
