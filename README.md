@@ -1,10 +1,10 @@
 # EsameProgOggetti
  Il progetto è stato realizzato mediante l'uso del sito Facebook Developers, ovvero un sito tramite il quale determinati enti, come aziende oppure utenti privati, possono ricavare informazioni riguardante le loro pagine Facebook. Questo sito ci permette di utilizzare delle API cioe applicazioni che, mediante modalità standard espongono le funzionalità di altre applicazioni ovvero il ri-utlizzo di determinati servizi; queste API vengono utilizzate mediante un software chiamato POSTMAN il quale è un software di API development che ci permette di  creare, testare, documentare, monitorare e pubblicare documentazione per le nostre API e ci permette inoltre di fornire il nostro risultato in formato JSON. Noi abbiamo realizzato questo progetto tramite un SpringBootApplication il quale poi è stata implementata in java mediante l'IDE ECLIPSE. Tramite questa SpringBootApplication, è possibile lanciare il nostro programma attraverso il nostro software Postaman che ci permette di gestire le chiamate Get e Post le quali sono:
-	Ottenere un elenco di post(GET)
-	Ottenere metadata dei post (GET)
-	Ottenere delle statistiche sui contenuti dei post in formato JSON (GET)
-	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
-	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
+*	Ottenere un elenco di post(GET)
+*	Ottenere metadata dei post (GET)
+*	Ottenere delle statistiche sui contenuti dei post in formato JSON (GET)
+*	Fare dei filtri sui post della pagina ed ottenere l’elenco dei post filtrati in formato JSON(POST)
+*	Integrazione del metodo precedente con l’aggiunta di statistiche sui post filtrati. (POST)
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Use%20Case%20Diagram.jpg)
 
@@ -54,14 +54,14 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | Lt	| {“Lt”:[“x”]}	| Post con numero caratteri minori di x |
 | Bt	| {“Bt”:[“x”, “y”]} |	Post con numero caratteri compresi tra x e y |
 | In | {"In":["contenuto cercato"]} | Post aventi il contenuto cercato nel messaggio |
-| LikeBt | {"LikeBt":["x","y"]} | Post 
-| LikeGt | {"LikeGt":["x"]} | Post 
-| LikeLt | {"LikeLt":["x"]} | Post 
-| LikeIn | {"LikeIn":["x","y"]} | Post 
+| LikeBt | {"LikeBt":["x","y"]} | Post con numero di like compresi tra x e y
+| LikeGt | {"LikeGt":["x"]} | Post con numero di like maggiori di x
+| LikeLt | {"LikeLt":["x"]} | Post con numero di like minori di x
+| LikeIn | {"LikeIn":["x"]} | Post avente quel preciso valore di like (x)
 | InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
-| TimeAfter | {“TimeAfter”:[“data”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
-| TimeBefore	| {“TimeBefore”:[“data”]}	| | Post pubblicati prima rispetto a una data scelta dall'utente |
-| TimeEqual	| {“TimeEqual”:[“data”]}	| Post pubblicati in una data scelta dall'utente |
+| TimeAfter | {“TimeAfter”:[“yyyy-mm-dd”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
+| TimeBefore	| {“TimeBefore”:[“yyyy-mm-dd”]}	| Post pubblicati prima rispetto a una data scelta dall'utente |
+| TimeEqual	| {“TimeEqual”:[“yyyy-mm-dd”]}	| Post pubblicati in una data scelta dall'utente |
 
 # DIAGRAMMA DELLE CLASSI
 ## PACKAGE
@@ -77,13 +77,36 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Controller.jpg)
 
+## MODEL
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Model.jpg)
+
 ## STAT
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
 
 
-![alt text](http://url/to/img.png)
 
 
 
+## FILTER
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Filter.jpg)
+
+## EXCEPTION
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Exception.jpg)
+
+## SERVICE
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Service.jpg)
+
+## UTIL
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Util.jpg)
 
 
+#SUDDIVISIONE PROGETTO
+* Samuele Del Moro Creazione JavaDoc e parte relativa all'util e parte relativa e filtri e stat
+* Lorenzo Silvestri Creazione ReadMe e parte relativa al controller e service 
+* Antonio Antonini Diagrammi UML e prima stesura del progetto e parte relativa al model  
+Essendo dello stesso paese, ci siamo riusciti sempre ad incontrare per lavorare al meglio, quindi avendo lavorato sempre insieme abbiamo realizzato il progetto sempre in collaborazione per qualsiasi parte di esso; la suddivisione è una suddivisione relativa in quanto, appunto, abbiamo lavorato sempre in gruppo.
