@@ -64,15 +64,15 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | TimeEqual	| {“TimeEqual”:[“data”]}	| Post pubblicati in una data scelta dall'utente |
 
 #DIAGRAMMA DELLE CLASSI
-##PACKAGE
+#PACKAGE
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame.jpg)
 
-##APPLICATION
+#APPLICATION
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Application.jpg)
 
-##STAT
+#STAT
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
 
 
