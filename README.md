@@ -12,13 +12,13 @@ Per poter iniziare ad utilizzare il programma e avere a disposizione tutte le fu
 # RICHIESTE UTILIZZATE
 
 
-| TIPO | 	| ROTTA |	| DESCRIZIONE |
-| --- | | --- | | --- |
-| GET	| | /metadata	| | Richiesta dei metadati dei post |
-| GET |	| /posts	| | Richiesta di tutti i post, con il relativo numero di like |
-| GET	| | /stat	| | Richiesta di tutte le statistiche riguardo i post |
-| POST	| | /filter | 	| Esecuzione di un filtro su un post |
-| POST |	| /stat |	| Esecuzione di una statistica su un post filtrato |
+| TIPO 	| ROTTA | DESCRIZIONE |
+| --- | --- | --- |
+| GET	| /metadata	| Richiesta dei metadati dei post |
+| GET | /posts	| Richiesta di tutti i post, con il relativo numero di like |
+| GET | /stat	| Richiesta di tutte le statistiche riguardo i post |
+| POST	| /filter 	| Esecuzione di un filtro su un post |
+| POST | /stat | Esecuzione di una statistica su un post filtrato |
 
 
 Una volta definite tutte le chiamate andiamo a definire tutte le possibile statistiche e i possibili filtri i quali vanno a implementare le chiamate GET e POST.
