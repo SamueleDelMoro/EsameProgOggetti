@@ -2,7 +2,7 @@ package com.esame.EsameProgOgg.exception;
 
 /**
  * <p>
- * <b> Classe </b> di eccezione relativa all'errore di inserimento di valori per il filtro between
+ * <b> Classe </b> di eccezione per l'errore di inserimento di valori per il filtro between
  * </p>
  * @author Samuele Del Moro
  * @author Lorenzo Silvestri
