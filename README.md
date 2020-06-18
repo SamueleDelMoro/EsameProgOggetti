@@ -38,10 +38,11 @@ Per usare i filtri che abbiamo messo a disposizione, bisogna fare questa distinz
 3./filter?type=… con qualsiasi stringa o carattere diversa dalle precedenti per utilizzare un singolo filtro, purchè non sia nullo Tali stringhe saranno aggiunte a localhost:8080. Inoltre sarà possibile con l’operatore “&” eseguire una determinata statistica dopo un filtraggio(vedi par. STATISTICHE)
 Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 # OPERATORI FILTRI
-NOME 	BODY	DESCRIZIONE
-Gt	{“Gt”:[“x”]}	Post con numero caratteri maggiori di x
-Lt	{“Lt”:[“x”]}	Post con numero caratteri minori di x
-Bt	{“Bt”:[“x”, “y”]}	Post con numero caratteri compresi tra x e y
-InMessage	{“InMessage”:[“stringa cercata”]}	Post aventi nel message la stringa cercata
-InMultimedia	{“InMultimedia”:[“”]}	Post aventi contenuto multimediale
+| NOME |	BODY	| DESCRIZIONE |
+| --- | --- | --- |
+| Gt	| {“Gt”:[“x”]}	| Post con numero caratteri maggiori di x |
+| Lt	| {“Lt”:[“x”]}	| Post con numero caratteri minori di x |
+| Bt	| {“Bt”:[“x”, “y”]} |	Post con numero caratteri compresi tra x e y |
+| InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
+| InMultimedia	| {“InMultimedia”:[“”]}	| Post aventi contenuto multimediale |
 
