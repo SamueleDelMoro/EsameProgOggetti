@@ -72,6 +72,11 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Esame%20Application.jpg)
 
+## CONTROLLER
+
+
+![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Controller.jpg)
+
 ## STAT
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
 
