@@ -14,7 +14,7 @@ import com.esame.EsameProgOgg.model.StatisticsNum;
  * @author Antonio Antonini
  */
 public class StatisticsLikeAvg implements StatisticsCalculate {
-private ArrayList<Post> post=new ArrayList<Post>();
+	private ArrayList<Post> post=new ArrayList<Post>();
 	
 	/**
 	 * Costruttore
