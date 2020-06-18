@@ -60,7 +60,7 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 | LikeIn | {"LikeIn":["x"]} | Post avente quel preciso valore di like (x)
 | InMessage	| {“InMessage”:[“stringa cercata”]}	| Post aventi nel message la stringa cercata |
 | TimeAfter | {“TimeAfter”:[“yyyy-mm-dd”]}	| Post pubblicati successivamente rispetto a una data scelta dall'utente |
-| TimeBefore	| {“TimeBefore”:[“yyyy-mm-dd”]}	| | Post pubblicati prima rispetto a una data scelta dall'utente |
+| TimeBefore	| {“TimeBefore”:[“yyyy-mm-dd”]}	| Post pubblicati prima rispetto a una data scelta dall'utente |
 | TimeEqual	| {“TimeEqual”:[“yyyy-mm-dd”]}	| Post pubblicati in una data scelta dall'utente |
 
 # DIAGRAMMA DELLE CLASSI
