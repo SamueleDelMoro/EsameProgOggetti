@@ -85,7 +85,7 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Stat.jpg)
 
 
-![alt text](http://url/to/img.png)
+
 
 
 ## FILTER
@@ -105,4 +105,8 @@ Inoltre ora dobbiamo definire anche gli operatori per il filtri :
 ![alt text](https://github.com/SamueleDelMoro/EsameProgOggetti/blob/master/diagrammi%20UML/Util.jpg)
 
 
-
+#SUDDIVISIONE PROGETTO
+* Samuele Del Moro Creazione JavaDoc e parte relativa all'util e parte relativa e filtri e stat
+* Lorenzo Silvestri Creazione ReadMe e parte relativa al controller e service 
+* Antonio Antonini Diagrammi UML e prima stesura del progetto e parte relativa al model  
+Essendo dello stesso paese, ci siamo riusciti sempre ad incontrare per lavorare al meglio, quindi avendo lavorato sempre insieme abbiamo realizzato il progetto sempre in collaborazione per qualsiasi parte di esso; la suddivisione è una suddivisione relativa in quanto, appunto, abbiamo lavorato sempre in gruppo.
